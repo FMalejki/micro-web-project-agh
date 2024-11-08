@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wdai - micro-project</title>
+        <link rel="icon" type="image-x/icon" href="https://logowik.com/content/uploads/images/agh-university-of-science-and-technology1357.logowik.com.webp">
+        <link rel="stylesheet" href="styles/contact.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-icon">
+                <h2 style="font-family: 'Mona Sans', sans-serif;">Usługi elektryczne</h2>
+            </div>
+            <nav class="header-nav">
+                <a style="font-family: 'Mona Sans', sans-serif;" href="index.html" class="header-element">Home</a>
+                <a style="font-family: 'Mona Sans', sans-serif;" href="gallery.html" class="header-element">Galeria</a>
+                <a style="font-family: 'Mona Sans', sans-serif;" href="contact.html" class="header-element">Kontakt</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h1 style="text-align: center;font-family: 'Mona Sans', sans-serif;">Skontaktuj się z nami i umów spotkanie!</h1>
+            <p  style="font-family: 'Mona Sans', sans-serif; text-align: center;">
+                Skontaktuj się z nami i umów spotkanie, aby omówić Twoje potrzeby
+                i oczekiwania! Nasz zespół chętnie odpowie na wszystkie pytania
+                i doradzi najlepsze rozwiązania, dostosowane do Twojego projektu.
+                Niezależnie od tego, czy planujesz drobne prace, czy kompleksową
+                realizację, jesteśmy tutaj, aby wspierać Cię na każdym etapie
+                - od konsultacji po finalne efekty, które w pełni spełnią
+                Twoje oczekiwania.
+            </p>
+            <img style="max-width: 90%;border-radius: 10%; margin-top: 3%;" src="images/img4.jpg"/>
+            <button id="buttonId" class="buttons">Wyślij nam formularz kontaktowy!</button>
+            <span id="success">Pomyślnie wysłano formularz!<br>Już wkrótce skontaktujemy się z tobą</span>
+            <form class="contactForm hidden" id="contactForm">
+                <h1 style="text-align: center; font-family: 'Mona Sans', sans-serif;">Wypełnij formularz kontaktowy!</h1>
+                <label style="text-align: center; font-family: 'Mona Sans', sans-serif;">E-mail </label><br>
+                <input id="email" class="contactFormInputs" type="text" placeholder="johndoe@gmail.com"><br><br>
+                <span class="error" id="emailError">Weźże wpisz poprawny e-mail</span><br><br>
+                <label style="text-align: center; font-family: 'Mona Sans', sans-serif;">Temat wiadomości</label><br>
+                <select id="topic" class="contactFormInputs" style="text-align: center; font-family: 'Mona Sans', sans-serif;">
+                    <option>Instalacja infrastruktury elektrycznej</option>
+                    <option>Pomiary elektryczne</option>
+                    <option>Rzeczoznawstwo</option>
+                    <option>Fotowoltaika</option>
+                </select><br><br>
+                <label style="text-align: center; font-family: 'Mona Sans', sans-serif;">Wiadomość</label><br>
+                <textarea id="message" style="min-width: 80%; ;max-width: 400px; max-height: 400px; min-height: 100px; font-family: 'Mona Sans', sans-serif;" placeholder="Wiadomość"></textarea>
+                <span class="error" id="messageError">Weźże wpisz wiadomość</span><br><br>
+                <input class="buttons" type="submit" value="Wyślij!">
+            </form>
+        </div>
+        <footer>
+            <p style="font-family: 'Mona Sans', sans-serif;">Filip Malejki</p>
+        </footer>
+    </body>
+    <script src="js/contact.js"></script>
+</html>

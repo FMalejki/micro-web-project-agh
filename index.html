@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wdai - micro-project</title>
+        <link rel="icon" type="image-x/icon" href="https://logowik.com/content/uploads/images/agh-university-of-science-and-technology1357.logowik.com.webp">
+        <link rel="stylesheet" href="styles/indexcss.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-icon">
+                <h2 style="font-family: 'Mona Sans', sans-serif;">Usługi elektryczne</h2>
+            </div>
+            <nav class="header-nav">
+                <a style="font-family: 'Mona Sans', sans-serif;" href="index.html" class="header-element">Home</a>
+                <a style="font-family: 'Mona Sans', sans-serif;" href="gallery.html" class="header-element">Galeria</a>
+                <a style="font-family: 'Mona Sans', sans-serif;" href="contact.html" class="header-element">Kontakt</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h1 style="text-align: center;font-family: 'Mona Sans', sans-serif;">Profesjonalna opieka nad twoją budową!</h1>
+            <p style="text-align: center; font-family: 'Mona Sans', sans-serif;">od pierwszego szkicu po ostatni detal! Z naszym 
+                doświadczonym zespołem możesz liczyć na pełne wsparcie
+                na każdym etapie realizacji, od planowania i koordynacji
+                prac, przez nadzór nad jakością wykonania, aż po 
+                finalny odbiór. Zadbamy o to, aby wszystkie procesy
+                przebiegały sprawnie, terminowo i zgodnie z najwyższymi
+                standardami, dając Ci pewność, że Twój projekt jest w
+                najlepszych rękach.
+            </p>
+            <div class="interactive-gallery">
+                <div class="left-banner">
+                    <img src="images/img1.jpg" alt="img"/>
+                </div>
+                <div class="right-part-banner">
+                    <div class="upper-right-banner">
+                        <img src="images/img2.jpg" alt="img"/>
+                    </div>
+                    <div class="down-left-banner">
+                        <div class="small-banner">
+                            <img src="images/img3.jpg" alt="img"/>
+                        </div>
+                        <div class="small-banner">
+                            <img src="images/img4.jpg" alt="img"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="border: 3px solid #c35c17; width: 80%; border-radius: 40%; margin-top: 5%; margin-bottom: 5%;">
+            <div class="call-to-action">
+                <h1 style="font-family: 'Mona Sans', sans-serif;">Nasze Projekty</h1>
+                <p style="max-width: 100vh;;text-align: center; font-family: 'Mona Sans', sans-serif;">
+                    Zostań jednym z naszych zadowolonych klientów i buduj swój dom
+                    lub rozwijaj biznes profesjonalnie - z naszym eksperckim wsparciem
+                    na każdym kroku. Dzięki wieloletniemu doświadczeniu i zaangażowaniu
+                    pomożemy Ci zrealizować nawet najbardziej wymagające projekty. Nasz
+                    zespół specjalistów zadba o to, abyś czuł się pewnie na każdym
+                    etapie współpracy, gwarantując solidność, terminowość i indywidualne
+                    podejście do Twoich potrzeb.
+                </p>
+                <button id="toGallery" class="buttons" style="font-family: 'Mona Sans', sans-serif;">
+                    obejrzyj całą naszą galerię!
+                </button>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/img1.jpg" style="width:100%">
+                    <div style="font-family: 'Mona Sans', sans-serif;" class="text"></div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/img2.jpg" style="width:100%">
+                    <div style="font-family: 'Mona Sans', sans-serif;" class="text"></div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/img3.jpg" style="width:100%">
+                    <div style="font-family: 'Mona Sans', sans-serif;" class="text"></div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p style="font-family: 'Mona Sans', sans-serif;">Filip Malejki</p>
+        </footer>
+    </body>
+    <script src="js/index.js"></script>
+</html>
